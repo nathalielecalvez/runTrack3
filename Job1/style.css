@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligne tout en haut */
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+ 
+    padding: 10px;
+    background-color: #0fa348;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fixe la barre en haut de l'écran */
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.i{
+     justify-content: flex-end;
+    
+
+}
+.header h1 {
+    margin: 0;
+    padding: 0px 0;
+    color: antiquewhite;
+   display:flex;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(0, 128, 119);
+    background-color: white;
+   display: flex;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+.header .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap:5px;
+    align-items: end;
+    border-radius: 0px;
+    margin: 0;
+    padding:0p
+   
+}
+
+.form-container {
+    margin-top: 100px; /* Espacement pour le formulaire sous la barre fixe */
+    max-width: 300px; /* Formulaire plus serré */
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white; /* Fond blanc pour le formulaire */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Espacement réduit entre les champs */
+    border: 1px solid #11dc6c;
+    border-radius: 4px;
+    
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    /* background-color: white; */
+    color: rgb(19, 19, 19);
+    border: 2px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Enlever le soulignement */
+    display: inline-block;
+    background-color: #0fa348;
+    
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+p {
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 10px; /* Espacement réduit entre le message et les champs */
+}
