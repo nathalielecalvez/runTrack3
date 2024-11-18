@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Jour 5</h1>
+        <div class="buttons">
+            <a href="connexion.html" class="i">Connexion</a>
+            <a href="inscription.html" class="i">Inscription</a>
+        </div>
+    </header>
+    <div class="form-container">
+        <label for="nom">Votre Nom</label>
+        <input type="text" id="nom" required pattern="^[A-Z]+$" title="Le nom doit être en majuscules.">
+        <!-- <span class="error-message">Le nom doit être en majuscules.</span> <br><br> -->
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" required pattern="[A-ZÀ-Ý][a-zà-ÿA-ZÀ-Ý]*$" title="Le prénom doit commencer par une majuscule.">
+        <!-- <span class="error-message">Le prénom doit commencer par une majuscule.</span> -->
+        <br><br>> 
+        <label for="email"> Email</label>
+        <input type="email" id="email" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(fr|com|io)$" title="Veuillez entrer un email valide.">
+        <!-- <span class="error-message">Veuillez entrer un email valide (se terminant par .fr, .com ou .io).</span>> <br><br> -->
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="10"> <br><br>
+        <label for="adresse">Adresse</label>
+        <input type="text" id="adresse" required minlength="5"> <br><br>
+        <label for="ville">Ville</label>
+        <input type="text" id="ville" required> <br><br>
+        <label for="codePostal">Code Postal</label>
+        <input type="number" id="codePostal" required minlength="5"> <br><br>
+        <button id="checkButton">S'inscrire</button>
+        <p id="message"></p>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>

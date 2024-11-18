@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luvarte</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Importation de TailwindCSS depuis le CDN pour la mise en forme -->
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <div class="bg-cover bg-center h-screen" style="background-image: url('chaton.avif');">
+  <!-- Header -->
+  <header class="bg-[#336c45] text-white py-4">
+    <div class="flex justify-between items-center max-w-6xl mx-auto mb-6">
+      
+      <!-- Navigation principale -->
+      <nav class="flex space-x-2 md:space-x-8">
+        <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job4/index.html" class="nav__link">Accueil</a>
+
+      
+        
+        <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job4/index.html" class="nav__link">Inscription</a> 
+
+        <!-- <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job1,2,3/index.html#"><img src="person.png" style="height: 30px"/></a> Icône de profil -->
+        <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job1,2,3/index.html#" class="nav__link">Connexion</a>
+
+        <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job1,2,3/index.html#" class="nav__link"></a>
+ 
+      </nav>
+      <nav class="flex">
+        <a href="http://localhost/RunTrack3/Tailwind/Jour8/Job1,2,3/index.html#"><img src="search.svg" style="height: 30px"/></a> <!-- Icône de profil -->
+</nav>
+      </nav>
+    </div>
+    
+  </header>
+
+  <!-- Section de formulaire de création de compte -->
+  <section class="max-w-3xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-8 bg-white/50 2">
+
+    <h2 class="text-3xl font-bold text-center mb-6">Créer You compte</h2>
+    <form action="#" method="POST">
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+
+        <!-- Civilité -->
+        <div class="sm:col-span-2">
+          <label class="block text-sm font-semibold text-gray-900">Civilité</label>
+          <div class="mt-2 flex gap-5">
+            <label><input type="radio" name="civilite" value="Monsieur" class="mr-2">Monsieur</label>
+            <label><input type="radio" name="civilite" value="Madame" class="mr-2">Madame</label>
+            <label><input type="radio" name="civilite" value="Mademoiselle" class="mr-2">Mademoiselle</label>
+          </div>
+        </div>
+
+        <!-- Prénom -->
+        <div>
+          <label for="first-name" class="block text-sm font-semibold text-gray-900">Prénom</label>
+          <input type="text" id="first-name" name="first-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <!-- Nom -->
+        <div>
+          <label for="last-name" class="block text-sm font-semibold text-gray-900">Nom</label>
+          <input type="text" id="last-name" name="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+
+
+        <!-- Adresse -->
+        <div class="sm:col-span-2">
+          <label for="address" class="block text-sm font-semibold text-gray-900">Adresse</label>
+          <input type="text" id="address" name="address" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <!-- Email -->
+        <div class="sm:col-span-2">
+          <label for="email" class="block text-sm font-semibold text-gray-900">Email</label>
+          <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <!-- Mot de passe -->
+        <div>
+          <label for="password" class="block text-sm font-semibold text-gray-900">Mot de passe</label>
+          <input type="password" id="password" name="password" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <!-- Validation mot de passe -->
+        <div>
+          <label for="password-confirm" class="block text-sm font-semibold text-gray-900">Confirmez le mot de passe</label>
+          <input type="password" id="password-confirm" name="password-confirm" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        </div>
+
+        <!-- Passions -->
+        <div class="sm:col-span-2">
+          <label class="block text-sm font-semibold text-gray-900">Passions</label>
+          <div class="mt-2 flex gap-4">
+            <label><input type="checkbox" name="passions" value="informatique" class="mr-2">Informatique</label>
+            <label><input type="checkbox" name="passions" value="voyages" class="mr-2">Voyages</label>
+            <label><input type="checkbox" name="passions" value="sport" class="mr-2">Sport</label>
+            <label><input type="checkbox" name="passions" value="lecture" class="mr-2">Lecture</label>
+          </div>
+        </div>
+      </div>
+      <!-- Bouton d'envoi -->
+      <button type="submit" class="mt-6 w-full bg-[#336c45] text-white py-2 rounded-md hover:bg-indigo-700 font-semibold">Valider</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#336c45] text-white py-4 mt-12">
+    <div class="flex justify-center space-x-4">
+      <a href="index.html" class="hover:underline">A propos</a>
+      <a href="index.html" class="hover:underline">Contact</a>
+      <a href="index.html" class="hover:underline">Mention Légal</a>
+      <a href="index.html" class="hover:underline">Qui sommes nous</a>
+    </div>
+  </footer>
+
+</body>
+</html>

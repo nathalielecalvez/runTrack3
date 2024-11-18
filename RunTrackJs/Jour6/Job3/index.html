@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .block {
+            height: 100px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .block-large {
+            background-color: lightblue;
+        }
+
+        .block-medium {
+            background-color: blue;
+        }
+
+        .block-medium:nth-of-type(4),
+        .block-medium:nth-of-type(5) {
+            background-color: purple;
+        }
+
+        .block-small {
+            background-color: orange;
+        }
+
+        /* Styles spécifiques pour les écrans mobiles */
+        @media (max-width: 768px) {
+            .block-large, .block-medium, .block-small {
+                height: 80px; /* Réduire la hauteur pour les petits écrans */
+            }
+
+            .block {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+    <title>Page Responsive</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Grande section en haut -->
+        <div class="row">
+            <div class="col-12 block block-large"></div>
+            <style>
+                grid-template-column:1fr-1fr-1fr;
+            </style>
+        </div>
+        <!-- Trois sections égales au milieu -->
+        <div class="row">
+            <div class="col-md-4 block block-medium"></div>
+            <div class="col-md-4 block block-medium"></div>
+            <div class="col-md-4 block block-medium"></div>
+        </div>
+        <!-- Deux sections égales au milieu -->
+        <div class="row">
+            <div class="col-md-6 block block-medium"></div>
+            <div class="col-md-6 block block-medium"></div>
+        </div>
+        <!-- Trois petites sections en bas -->
+        <div class="row">
+            <div class="col-md-4 block block-small"></div>
+            <div class="col-md-4 block block-small"></div>
+            <div class="col-md-4 block block-small"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

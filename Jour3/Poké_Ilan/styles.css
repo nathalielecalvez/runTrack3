@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+.tile {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.empty {
+    background-color: transparent;
+    border: none;
+}
+#message {
+    color: green;
+    display: none;
+    margin-top: 20px;
+}
